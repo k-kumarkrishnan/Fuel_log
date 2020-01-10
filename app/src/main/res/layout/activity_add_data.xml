@@ -1,0 +1,239 @@
+<LinearLayout android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/parent_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="10dp"/>
+<androidx.core.widget.NestedScrollView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Service Type"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_marginStart="5dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.2"/>
+
+            <Spinner
+                android:id="@+id/Service_spinner"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Select Service"
+                android:textSize="15dp"
+                android:layout_marginStart="5dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.7"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TypeID"
+                android:layout_marginStart="5dp"
+                android:textSize="15dp"
+                android:layout_margin="5dp"
+                android:textStyle="bold"
+                android:layout_weight="0.2"/>
+
+            <EditText
+                android:id="@+id/typeLog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Select Service"
+                android:layout_marginStart="5dp"
+                android:textSize="12dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.7"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Odometer"
+                android:layout_marginStart="5dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:layout_weight="0.2"/>
+
+            <EditText
+                android:id="@+id/Odometer_Text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Select Service"
+                android:layout_marginStart="5dp"
+                android:textSize="12dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.7"/>
+        </TableRow>
+
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cost / Unit"
+                android:layout_marginStart="5dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:layout_weight="0.2"/>
+
+            <EditText
+                android:id="@+id/fuel_cost_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Select Service"
+                android:layout_marginStart="5dp"
+                android:textSize="12dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.7"/>
+        </TableRow>
+
+
+        <TableRow
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Furl filled"
+                android:layout_marginStart="5dp"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:layout_margin="5dp"
+                android:layout_weight="0.2"/>
+
+            <EditText
+                android:id="@+id/fuel_filled_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Select Service"
+                android:layout_marginStart="5dp"
+                android:textSize="12dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.7"/>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <CheckBox
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Full Tank"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.3"
+                android:textSize="15dp"
+                android:textStyle="bold"
+                android:text= "Date" />
+            <EditText
+                android:id="@+id/Date_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Select Service"
+                android:layout_marginStart="5dp"
+                android:textSize="12dp"
+                android:layout_margin="5dp"
+                android:layout_weight="0.7"/>
+
+
+
+        </TableRow>
+
+
+
+
+    </TableLayout>
+</androidx.core.widget.NestedScrollView>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rel1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:elevation="12dp">
+
+        <Space
+            android:id="@+id/space_11"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:id="@+id/Cancel_Add_Data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@+id/space_11"
+            android:text="Cancel" />
+
+
+        <Button
+            android:id="@+id/save_Add_Data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@+id/space3"
+            android:layout_marginEnd="1dp"
+            android:text="Save" />
+
+        <Space
+            android:layout_width="48dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="46dp"
+            android:layout_marginEnd="80dp"
+            android:layout_toStartOf="@+id/save_Add_Data"
+            android:layout_toEndOf="@+id/Cancel_Add_Data" />
+
+        <Space
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:id="@+id/space3"
+            android:layout_marginEnd="2dp" />
+    </RelativeLayout>
+
+</LinearLayout>
